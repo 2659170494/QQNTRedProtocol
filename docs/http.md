@@ -1,8 +1,12 @@
 ## Bot 信息
+### 自身信息
+GET /api/getSelfProfile
+
+
 ### 好友列表
 GET /api/bot/friends
 
-Response: type.info.Friend[]
+Response: type.info.User[]
 
 相关链接：
 
@@ -44,6 +48,15 @@ POST /api/group/getAnnouncements
 ```typescript
 {
     group: 233333, // 群号
+}
+```
+
+### 获取成员列表
+POST /api/group/getMemberList
+```typescript
+{
+    group: 233333, // 群号
+    size: 20 // 个数
 }
 ```
 
