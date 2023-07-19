@@ -2,8 +2,8 @@ site_name: RedProtocol
 site_description: 'RedProtocol 的协议细则'
 site_author: '@chronocat'
 docs_dir: docs/
-repo_name: 'BetterQQNT/RedProtocol'
-repo_url: 'https://github.com/BetterQQNT/RedProtocol'
+repo_name: 'BetterQQNT/QQNTRedProtocol'
+repo_url: 'https://github.com/BetterQQNT/QQNTRedProtocol'
 nav:
     - 基础: index.md
     - HTTP: http.md

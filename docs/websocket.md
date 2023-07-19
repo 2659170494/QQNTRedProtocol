@@ -48,7 +48,7 @@
 
 相关链接：
 
-[type.auth](https://github.com/BetterQQNT/RedProtocol/blob/main/types/auth.d.ts)
+[type.auth](https://github.com/BetterQQNT/QQNTRedProtocol/blob/main/types/auth.d.ts)
 
 #### `group::mute` ⬆️
 设置禁言
@@ -64,3 +64,14 @@
     ]
 }
 ```
+
+#### `message::recv` ⬇️
+接收消息
+
+```typescript
+type.message.Message
+```
+
+相关链接：
+
+[type.message](https://github.com/BetterQQNT/QQNTRedProtocol/blob/main/types/message.d.ts)
