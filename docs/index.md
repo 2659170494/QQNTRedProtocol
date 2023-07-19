@@ -21,7 +21,7 @@ TOKEN 被默认存储在 `%AppData%/BetterUniverse/QQNT/RED_PROTOCOL_TOKEN` 或 
 
 WebSocket:
 
-  [`meta::connect` 包](https://betterqqnt.github.io/RedProtocol/websocket/#metaconnect)
+  [`meta::connect` 包](https://betterqqnt.github.io/QQNTRedProtocol/websocket/#metaconnect)
   
 HTTP:
 
@@ -31,10 +31,10 @@ HTTP:
 
 > 注意：此部分使用的 JSON 都为类 TypeScript 的简写，请传入正确的 JSON 而不是此类简写
 
-见 [WebSocket 部分](https://betterqqnt.github.io/RedProtocol/websocket)
+见 [WebSocket 部分](https://betterqqnt.github.io/QQNTRedProtocol/websocket)
 
 ## 3. HTTP API
 
 > 注意：此部分使用的 JSON 都为类 TypeScript 的简写，请传入正确的 JSON 而不是此类简写
 
-见 [HTTP 部分](https://betterqqnt.github.io/RedProtocol/http)
+见 [HTTP 部分](https://betterqqnt.github.io/QQNTRedProtocol/http)
