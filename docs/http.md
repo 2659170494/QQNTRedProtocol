@@ -77,6 +77,13 @@ POST /api/message/fetchRichMedia
 
 Response: 直接返回对应消息元素对应的二进制；如：图片即返回图片二进制
 
+### 上传富媒体消息内容
+POST /api/upload
+
+body: FormData file=[文件]
+
+Response: 发送富媒体消息所需的所有信息，在 `message::send` 包中合并到 payload 即可。
+
 ### 撤回
 POST /api/message/recall
 ```typescript

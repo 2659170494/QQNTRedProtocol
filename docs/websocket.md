@@ -75,3 +75,19 @@ type.message.Message
 相关链接：
 
 [type.message](https://github.com/BetterQQNT/QQNTRedProtocol/blob/main/types/message.d.ts)
+
+#### `message::send` ⬇️
+发送消息
+
+```typescript
+{
+    peer: type.peer.Peer,
+    elements: type.message.Element[]
+}
+```
+
+相关链接：
+
+[type.message](https://github.com/BetterQQNT/QQNTRedProtocol/blob/main/types/message.d.ts)
+
+[type.peer](https://github.com/BetterQQNT/QQNTRedProtocol/blob/main/types/peer.d.ts)
