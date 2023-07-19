@@ -12,7 +12,12 @@ WebSocket 部分：`ws://localhost:16530/`
 HTTP 部分：`http://localhost:16530/api/`
 
 ### 1.1 认证
-TOKEN 被默认存储在 `%AppData%/BetterUniverse/QQNT/RED_PROTOCOL_TOKEN` 或 `~/BetterUniverse/QQNT/RED_PROTOCOL_TOKEN`，若无 TOKEN ，在启用 RedProtocol 时将会自动生成。
+
+TOKEN 被默认存储在 `%AppData%/BetterUniverse/QQNT/RED_PROTOCOL_TOKEN` 或 `~/BetterUniverse/QQNT/RED_PROTOCOL_TOKEN`。
+
+若无 TOKEN ，在启用 RedProtocol 时将会自动生成。
+
+认证方式：
 
 WebSocket:
 
@@ -20,13 +25,16 @@ WebSocket:
   
 HTTP:
 
-  在每次请求时候，在 HEADER 内携带 `Authorization` ： `Bearer TOKEN`
-  
+  每次请求时，在 HEADER 内携带 `Authorization`： `Bearer TOKEN`
 
 ## 2. WebSocket 包
+
+> 注意：此部分使用的 JSON 都为类 TypeScript 的简写，请传入正确的 JSON 而不是此类简写
 
 见 [WebSocket 部分](https://betterqqnt.github.io/RedProtocol/websocket)
 
 ## 3. HTTP API
+
+> 注意：此部分使用的 JSON 都为类 TypeScript 的简写，请传入正确的 JSON 而不是此类简写
 
 见 [HTTP 部分](https://betterqqnt.github.io/RedProtocol/http)

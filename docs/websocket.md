@@ -11,7 +11,7 @@
 ```
 
 例如：当你想发送一个类型为 `meta::connect`，载荷为 `{ "token": "123456" }` 的包，你需要发送：
-```ts
+```typescript
 {
     "type": "meta::connect",
     "payload": { 
@@ -29,16 +29,16 @@
 #### `meta::connect` ⬇️
 连接到 WebSocket 客户端
 
-```ts
+```typescript
 {
   token: "TOKEN"
 }
 ```
 
 #### `meta::connect` ⬆️
-协议端信息
+发回协议端信息
 
-```ts
+```typescript
 {
     version: '1.0.0',
     name: 'red-protocol',
@@ -46,16 +46,19 @@
 }
 ```
 
+相关链接：
+
+[type.auth](https://github.com/BetterQQNT/RedProtocol/blob/main/types/auth.d.ts)
+
 #### `group::mute` ⬆️
 设置禁言
 
-```ts
+```typescript
 {
     "group": "群ID",
     "memList": [
         {
-            "uin": "10086"
-            "uid": "u_ki2jd_LWVRwFCrxEVKD8hQ", // uin/uid 二选一
+            "uin": "10086",
             "timeStamp": 60 // 以秒为单位的时间
         }, ...others
     ]
