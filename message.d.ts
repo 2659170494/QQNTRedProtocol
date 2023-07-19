@@ -94,17 +94,17 @@ export interface Element {
 }
 
 export interface XMLElement {
-    busiType:    string;
-    busiId:      string;
-    c2cType:     number;
+    busiType: string;
+    busiId: string;
+    c2cType: number;
     serviceType: number;
-    ctrlFlag:    number;
-    content:     string;
-    templId:     string;
-    seqId:       string;
-    templParam:  any;
-    pbReserv:    string;
-    members:     any;
+    ctrlFlag: number;
+    content: string;
+    templId: string;
+    seqId: string;
+    templParam: any;
+    pbReserv: string;
+    members: any;
 }
 
 export interface PicElement {

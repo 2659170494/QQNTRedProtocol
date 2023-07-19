@@ -1,13 +1,13 @@
 export interface AuthData {
-    account:     string;
+    account: string;
     mainAccount: string;
-    uin:         string;
-    uid:         string;
-    nickName:    string;
-    gender:      number;
-    age:         number;
-    faceUrl:     string;
-    a2:          string;
-    d2:          string;
-    d2key:       string;
+    uin: string;
+    uid: string;
+    nickName: string;
+    gender: number;
+    age: number;
+    faceUrl: string;
+    a2: string;
+    d2: string;
+    d2key: string;
 }
