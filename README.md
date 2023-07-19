@@ -1,4 +1,4 @@
-<div align="center"> <img src="https://raw.githubusercontent.com/BetterQQNT/QQNTRedProtocol/main/icon_p.png" width="100"/> </div>
+<div align="center"> <img src="https://raw.githubusercontent.com/BetterQQNT/QQNTRedProtocol/main/icon_p.png" width="120"/> </div>
 
 <h1 align="center"> RedProtocol </h1>
 <div align="center"> <a href="https://betterqqnt.github.io/QQNTRedProtocol/">查看文档 </a> </div>
