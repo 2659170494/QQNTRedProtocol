@@ -4,19 +4,23 @@
 
 ## 1. 基本
 
-RedProtocol 提供方会提供一个 WebSocket 和 HTTP 合并的服务，当前默认打开在本机端口 16530。
+RedProtocol 提供方会提供一个 WebSocket 和 HTTP 合并的服务，当前默认打开在本机端口 16530，你也可以通过指定 `--red-protocol-port` 参数来更改端口号。
+
+RedProtocol 使用数字 ID（Uin）。
 
 WebSocket 部分：`ws://localhost:16530/`
 HTTP 部分：`http://localhost:16530/api/`
 
 ### 1.1 认证
+TOKEN 被默认存储在 `%AppData%/BetterUniverse/QQNT/RED_PROTOCOL_TOKEN` 或 `~/BetterUniverse/QQNT/RED_PROTOCOL_TOKEN`，若无 TOKEN ，在启用 RedProtocol 时将会自动生成。
+
 WebSocket:
 
-  `meta::connect` 包
+  [`meta::connect` 包](https://github.com/BetterQQNT/RedProtocol/#metaconnect-%EF%B8%8F)
   
 HTTP:
 
-  HEADER 内 `Authorization` 项： `Bearer TOKEN`
+  在每次请求时候，在 HEADER 内携带 `Authorization` ： `Bearer TOKEN`
   
 
 ## 2. WebSocket 包
@@ -28,6 +32,16 @@ HTTP:
     type: 'meta::connect', // 包类型
     payload: { // 包载荷
       
+    }
+}
+```
+
+例如：当你想发送一个类型为 `meta::connect`，载荷为 `{ "token": "123456" }` 的包，你需要发送：
+```ts
+{
+    "type": "meta::connect",
+    "payload": { 
+       "token": "123456"
     }
 }
 ```
@@ -74,5 +88,33 @@ HTTP:
 }
 ```
 
+## 3. HTTP API
 
+### 设置全体禁言
+POST /api/group/muteEveryone
+```ts
+{
+    group: uin,
+    enable: true // 是否开启
+}
+```
 
+### 踢人
+POST /api/group/kick
+```ts
+{
+    uidList: [1234567],
+    group: 233333,
+    refuseForever: false, // 永踢
+    reason: ' 原因 '
+}
+```
+
+### 撤回
+POST /api/message/recall
+```ts
+{
+    msgIds: ['7251111111111122069'], // 依然不建议一次传太多 还是会失败的
+    peer: 一般 Peer 格式
+}
+```
