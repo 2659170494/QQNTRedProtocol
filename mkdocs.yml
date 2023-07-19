@@ -1,10 +1,12 @@
-site_name: Test docs
-site_description: 'A docs test'
-site_author: 'Michael Hausenblas'
+site_name: RedProtocol
+site_description: 'RedProtocol 的协议细则'
+site_author: '@chronocat'
 docs_dir: docs/
-repo_name: 'mhausenblas/mkdocs-template'
-repo_url: 'https://github.com/mhausenblas/mkdocs-template'
+repo_name: 'BetterQQNT/RedProtocol'
+repo_url: 'https://github.com/BetterQQNT/RedProtocol'
 nav:
-    - Home: index.md
+    - 基础: index.md
+    - HTTP: http.md
+    - WebSocket: websocket.md
 theme:
   name: 'material'
