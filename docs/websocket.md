@@ -50,21 +50,6 @@
 
 [type.auth](https://github.com/BetterQQNT/QQNTRedProtocol/blob/main/types/auth.d.ts)
 
-#### `group::mute` ⬆️
-设置禁言
-
-```typescript
-{
-    "group": "群ID",
-    "memList": [
-        {
-            "uin": "10086",
-            "timeStamp": 60 // 以秒为单位的时间
-        }, ...others
-    ]
-}
-```
-
 #### `message::recv` ⬇️
 接收消息
 
@@ -76,7 +61,7 @@ type.message.Message
 
 [type.message](https://github.com/BetterQQNT/QQNTRedProtocol/blob/main/types/message.d.ts)
 
-#### `message::send` ⬇️
+#### `message::send` ⬆️
 发送消息
 
 ```typescript
