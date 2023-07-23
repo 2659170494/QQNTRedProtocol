@@ -77,4 +77,4 @@ type.message.Message
 
 [type.peer](https://github.com/BetterQQNT/QQNTRedProtocol/blob/main/types/peer.d.ts)
 
-使用样例：https://github.com/BetterQQNT/QQNTRedProtocol/issues/1
+使用例：[issue/1](https://github.com/BetterQQNT/QQNTRedProtocol/issues/1)
