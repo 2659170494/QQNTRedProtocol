@@ -82,7 +82,7 @@ POST /api/upload
 
 body: FormData file=[文件]
 
-Response: 发送富媒体消息所需的所有信息，在 `message::send` 包中合并到 payload 即可。
+Response: 发送富媒体消息所需的所有信息，在 `message::send` 包中合并到 payload.elements 即可。
 
 ### 撤回
 POST /api/message/recall
