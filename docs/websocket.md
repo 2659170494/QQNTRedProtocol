@@ -91,3 +91,5 @@ type.message.Message
 [type.message](https://github.com/BetterQQNT/QQNTRedProtocol/blob/main/types/message.d.ts)
 
 [type.peer](https://github.com/BetterQQNT/QQNTRedProtocol/blob/main/types/peer.d.ts)
+
+使用样例：https://github.com/BetterQQNT/QQNTRedProtocol/issues/1
