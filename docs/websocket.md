@@ -35,6 +35,8 @@
 }
 ```
 
+-----------
+
 #### `meta::connect` ⬆️
 发回协议端信息
 
@@ -50,6 +52,8 @@
 
 [type.auth](https://github.com/BetterQQNT/QQNTRedProtocol/blob/main/types/auth.d.ts)
 
+-----------
+
 #### `message::recv` ⬇️
 接收消息
 
@@ -60,6 +64,8 @@ type.message.Message
 相关链接：
 
 [type.message](https://github.com/BetterQQNT/QQNTRedProtocol/blob/main/types/message.d.ts)
+
+-----------
 
 #### `message::send` ⬆️
 发送消息
